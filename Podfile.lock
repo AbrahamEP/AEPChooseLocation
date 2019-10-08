@@ -1,0 +1,29 @@
+PODS:
+  - GoogleMaps (3.1.0):
+    - GoogleMaps/Maps (= 3.1.0)
+  - GoogleMaps/Base (3.1.0)
+  - GoogleMaps/Maps (3.1.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.1.0):
+    - GoogleMaps/Base (= 3.1.0)
+  - MBProgressHUD (1.1.0)
+
+DEPENDENCIES:
+  - GoogleMaps (~> 3.1)
+  - GooglePlaces (~> 3.1)
+  - MBProgressHUD (~> 1.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleMaps
+    - GooglePlaces
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
+  GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+
+PODFILE CHECKSUM: d0906ecada7444a1756284fb3c7d332a87a55b0a
+
+COCOAPODS: 1.6.1

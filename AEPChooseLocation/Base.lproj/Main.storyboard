@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AEPChooseLocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GH-Ud-IgA">
+                                <rect key="frame" x="149.5" y="420.5" width="115" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="fpo-ur-Ldl"/>
+                                </constraints>
+                                <state key="normal" title="Choose Location"/>
+                                <connections>
+                                    <action selector="chooseLocationButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ohv-eq-abJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avz-Ju-4eF">
+                                <rect key="frame" x="20" y="104" width="374" height="308.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="avz-Ju-4eF" secondAttribute="trailing" constant="20" id="3kd-jm-g4D"/>
+                            <constraint firstItem="1GH-Ud-IgA" firstAttribute="top" secondItem="avz-Ju-4eF" secondAttribute="bottom" constant="8" id="Af4-Aq-qnX"/>
+                            <constraint firstItem="1GH-Ud-IgA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kyz-Fq-bMz"/>
+                            <constraint firstItem="1GH-Ud-IgA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rni-gT-DNx"/>
+                            <constraint firstItem="avz-Ju-4eF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="VXu-Qk-jc3"/>
+                            <constraint firstItem="avz-Ju-4eF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ibo-ka-AdG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="avz-Ju-4eF" id="gQF-fd-11Z"/>
+                        <outlet property="chooseLocationButton" destination="1GH-Ud-IgA" id="eyg-gJ-Hb6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
